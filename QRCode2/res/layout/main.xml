@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+    
+		<Button android:id="@+id/btnPhone"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:text="相册" />
+		<Button android:id="@+id/btnTakePicture"
+			android:layout_height="wrap_content"
+			android:layout_width="fill_parent"
+			android:text="拍照" />
+    
+    
+     <TextView 
+       	android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:text="请输入：" />
+    
+    <EditText 
+        android:id="@+id/et_qr_string"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:hint="输入文本"/>
+    
+    <Button
+        android:id="@+id/btn_add_qrcode"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="生成二维码" />
+    
+    <ImageView 
+        android:id="@+id/iv_qr_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"/>
+
+</LinearLayout>
